@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HMAC Lab — Calcule, verifique e entenda códigos de autenticação de mensagem no navegador</title>
+    <meta
+      name="description"
+      content="Laboratório didático e interativo de HMAC: calcule e verifique códigos de autenticação de mensagem com SHA-256, SHA-512, SHA-384, SHA-1 e MD5. Visualize o pipeline interno (ipad, opad, hashes aninhados), explore diagramas de sequência de cenários reais (webhooks, APIs assinadas, JWT HS256, replay) — tudo local e gratuito."
+    />
+    <meta
+      name="keywords"
+      content="HMAC, hash-based message authentication code, HMAC-SHA256, HMAC-SHA512, assinatura de API, webhook signature, X-Hub-Signature-256, AWS Signature V4, JWT HS256, RFC 2104, message authentication, MAC, integridade, autenticidade"
+    />
+    <meta name="author" content="HMAC Lab — Rapport Tecnologia" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#020617" />
+    <link rel="canonical" href="https://hmac-lab.example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HMAC Lab" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="HMAC Lab — Calcule, verifique e entenda HMAC no navegador" />
+    <meta
+      property="og:description"
+      content="Laboratório didático de HMAC: calcule e verifique MACs, veja o pipeline interno passo a passo e explore diagramas de sequência de comunicações autenticadas — 100% local."
+    />
+    <meta property="og:url" content="https://hmac-lab.example.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="HMAC Lab — Laboratório didático de HMAC" />
+    <meta
+      name="twitter:description"
+      content="Calcule e verifique HMAC-SHA256/SHA-512 no navegador, visualize o pipeline interno e entenda cenários reais com diagramas de sequência."
+    />
+
+    <!-- Dados estruturados -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "HMAC Lab",
+        "url": "https://hmac-lab.example.com/",
+        "description": "Laboratório didático e interativo de HMAC (Hash-based Message Authentication Code): calcular, verificar e visualizar o pipeline interno de MACs no navegador, com diagramas de sequência de cenários reais.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "pt-BR",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+        "featureList": [
+          "Calcular HMAC com SHA-256, SHA-384, SHA-512, SHA-1 e MD5",
+          "Pipeline interno visualizado: derivação de chave, ipad, opad e hashes aninhados",
+          "Verificação de MAC com comparação byte a byte em tempo constante",
+          "Diagramas de sequência: API assinada, webhook, JWT HS256, replay e adulteração",
+          "Vetores de teste das RFCs 2202 e 4231 para conferência"
+        ]
+      }
+    </script>
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRDTQXT5RY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MRDTQXT5RY');
+    </script>
+
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1710447158146560"
+    crossorigin="anonymous"></script>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='6' width='24' height='20' rx='4' fill='%23ea580c'/%3E%3Cpath d='M9 16h14M16 9v14' stroke='%23fff7ed' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
